@@ -23,9 +23,9 @@ const MemoryGame = () => {
         ].sort(() => Math.random() - 0.5);
     }
     const [items, setItems] = useState(generateCards());
-    useEffect(() => {
-        console.log(items);
-    }, [items]);
+    // useEffect(() => {
+    //     console.log(items);
+    // }, []);
     const [prev, setPrev] = useState(-1);
     const [time, setTime] = useState(0);
     const [bestScore, setBestScore] = useState(() => {
